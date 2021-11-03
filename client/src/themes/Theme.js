@@ -1,32 +1,30 @@
 import { createTheme } from '@mui/material/styles';
 
 const dark = createTheme({
+    typography: {
+        fontFamily: 'Noto Sans, sans-serif',
+    },
     palette: {
-        // primary: {
-        //     main: '#0c0032',
-        //     light: '#190061'
-        // },
-        // secondary: {
-        //     main: '#420090',
-        //     light: '#3500d3'
-        // },
         mode: 'dark',
     },
 });
 
 const light = createTheme({
+    typography: {
+        fontFamily: 'Noto Sans, sans-serif',
+    },
     palette: {
-        grey: {
-            main: '#282828',
+        dark: {
+            main: '#112d32',
         },
         primary: {
-            main: '#0c0032',
-            light: '#190061',
+            main: '#88bdbc',
+            light: '#254e58',
             contrastText: '#fff'
         },
         secondary: {
-            main: '#420090',
-            light: '#3500d3',
+            main: '#4f4a41',
+            light: '#6e6658',
             contrastText: '#fff'
         },
         mode: 'light',

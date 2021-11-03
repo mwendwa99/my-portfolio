@@ -6,7 +6,7 @@ const AppThemeProvider = ({ children }: any) => {
     const [theme, setTheme] = useState('light');
 
     const changeTheme = () => {
-        theme === 'light' ? setTheme('dark') : setTheme('light')
+        theme === 'light' ? setTheme('dark') : setTheme('light');
     };
 
     const values: any = { changeTheme, theme }

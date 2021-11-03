@@ -1,32 +1,38 @@
 import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
-import { Brightness5 } from '@mui/icons-material';
+import { Brightness4, Brightness5, Menu } from '@mui/icons-material';
+import { AppBar, Box, IconButton, Toolbar, Typography } from '@mui/material';
+
+import { useTheme } from '../context/themeContext';
 
 export default function NavBar() {
+    const { changeTheme, theme } = useTheme();
+
     return (
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static">
                 <Toolbar>
+                    <Typography variant="h3" component="div" sx={{ flexGrow: 1 }}>
+                        Mwendwa
+                    </Typography>
                     <IconButton
                         size="large"
                         edge="start"
                         color="inherit"
                         aria-label="menu"
                         sx={{ mr: 2 }}
-                    >
-                        <MenuIcon />
+                        onClick={() => changeTheme()}>
+                        {
+                            theme === 'light' ? <Brightness5 /> : <Brightness4 />
+                        }
                     </IconButton>
-                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                        News
-                    </Typography>
-                    <IconButton>
-                        <Brightness5 color='grey' />
+                    <IconButton
+                        size="large"
+                        edge="start"
+                        color="inherit"
+                        aria-label="menu"
+                        sx={{ m: 2 }}
+                    >
+                        <Menu />
                     </IconButton>
                 </Toolbar>
             </AppBar>

@@ -9,8 +9,8 @@ import Home from './pages/Home';
 import NavBar from './pages/NavBar';
 
 function App() {
-  const { theme } = useTheme()
-  console.log(theme)
+  const { theme } = useTheme();
+
   return (
     <ThemeProvider theme={theme === 'light' ? light : dark}>
       <CssBaseline />
