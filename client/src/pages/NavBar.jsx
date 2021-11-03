@@ -11,8 +11,8 @@ export default function NavBar() {
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static">
                 <Toolbar>
-                    <Typography variant="h3" component="div" sx={{ flexGrow: 1 }}>
-                        Mwendwa
+                    <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
+                        mwendwa
                     </Typography>
                     <IconButton
                         size="large"

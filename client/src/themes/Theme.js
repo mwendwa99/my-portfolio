@@ -14,6 +14,9 @@ const light = createTheme({
         fontFamily: 'Noto Sans, sans-serif',
     },
     palette: {
+        background: {
+            default: '#88bdbc',
+        },
         dark: {
             main: '#112d32',
         },

@@ -1,14 +1,20 @@
+import { Box } from '@mui/material';
+import { makeStyles } from '@mui/styles'
 import React from 'react';
 
-import { useTheme } from '../context/themeContext';
+const useStyles = makeStyles(() => ({
+    root: {
+
+    },
+}));
 
 const Home = () => {
-    const { changeTheme }: any = useTheme()
+    const classes = useStyles();
 
     return (
-        <div onClick={() => changeTheme()}>
-            Home
-        </div>
+        <Box style={{ height: '100rem' }}>
+
+        </Box>
     )
 }
 
