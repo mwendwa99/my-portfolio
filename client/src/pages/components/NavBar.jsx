@@ -30,8 +30,8 @@ const NavBar = () => {
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="fixed" enableColorOnDark elevation={0} >
                 <Toolbar>
-                    <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
-                        mwendwa
+                    <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
+                        <strong>mwendwa</strong>
                     </Typography>
                     <IconButton
                         size="large"

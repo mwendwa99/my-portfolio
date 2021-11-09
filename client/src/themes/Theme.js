@@ -1,4 +1,7 @@
-import { createTheme } from '@mui/material/styles';
+import { createTheme, responsiveFontSizes } from '@mui/material/styles';
+
+let theme = createTheme();
+theme = responsiveFontSizes(theme);
 
 const dark = createTheme({
     typography: {
@@ -27,6 +30,9 @@ const dark = createTheme({
 const light = createTheme({
     typography: {
         fontFamily: 'Noto Sans, sans-serif',
+        [theme.breakpoints.down('md')]: {
+            fontSize: '50%',
+        },
         allVariants: {
             color: '#F3F2C9',
         },
@@ -53,5 +59,6 @@ const light = createTheme({
         mode: 'light',
     },
 })
+
 
 export { dark, light };

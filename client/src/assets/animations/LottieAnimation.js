@@ -1,13 +1,12 @@
 import React from 'react';
 import Lottie from "react-lottie";
-import animationData from './working-man.json'
 
 
-const WorkAnimation = ({ width, height }) => {
+const WorkAnimation = ({ lotti, width, height }) => {
   const defaultOptions = {
     loop: true,
     autoplay: true,
-    animationData: animationData,
+    animationData: lotti,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
