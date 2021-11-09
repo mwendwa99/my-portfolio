@@ -6,7 +6,7 @@ import { dark, light } from './themes/Theme';
 import { useTheme } from './context/themeContext';
 import './App.css';
 import Home from './pages/Home';
-import NavBar from './pages/NavBar';
+import NavBar from './pages/components/NavBar';
 
 function App() {
   const { theme } = useTheme();

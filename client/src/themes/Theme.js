@@ -5,6 +5,21 @@ const dark = createTheme({
         fontFamily: 'Noto Sans, sans-serif',
     },
     palette: {
+        background: {
+            default: '#1A1A2E',
+        },
+        primary: {
+            main: '#16213E',
+            light: '#0F3460',
+            dark: '#003638',
+            contrastText: '#F3F2C9'
+        },
+        secondary: {
+            main: '#362222',
+            light: '#423F3E',
+            dark: '#171010',
+            contrastText: '#F3F2C9'
+        },
         mode: 'dark',
     },
 });
