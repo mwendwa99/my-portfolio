@@ -2,14 +2,14 @@ import { createContext, useContext, useState } from 'react';
 
 const ThemeContext = createContext('');
 
-const AppThemeProvider = ({ children }: any) => {
+const AppThemeProvider = ({ children }) => {
     const [theme, setTheme] = useState('light');
 
     const changeTheme = () => {
         theme === 'light' ? setTheme('dark') : setTheme('light');
     };
 
-    const values: any = { changeTheme, theme }
+    const values = { changeTheme, theme }
 
     return (
         <ThemeContext.Provider value={values}>

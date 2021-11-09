@@ -1,14 +1,14 @@
 import * as React from 'react';
 import { Brightness4, Brightness5, MenuRounded } from '@mui/icons-material';
-import { AppBar, Box, IconButton, Toolbar, Typography, MenuItem, Menu } from '@mui/material';
+import { AppBar, Box, IconButton, Toolbar, Typography, MenuItem, Menu, Container } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 
 import { useTheme } from '../../context/themeContext';
 
 const useStyles = makeStyles(theme => ({
     mainmenu: {
-        width: "100vw",
-        height: "100vh",
+        width: "50vw",
+        height: "50vh",
     }
 }));
 
@@ -66,11 +66,11 @@ const NavBar = () => {
                         open={open}
                         onClose={handleClose}
                     >
-                        <Box className={classes.mainmenu}>
+                        <Container className={classes.mainmenu}>
                             <MenuItem onClick={handleClose}>Profile</MenuItem>
                             <MenuItem onClick={handleClose}>My account</MenuItem>
                             <MenuItem onClick={handleClose}>Logout</MenuItem>
-                        </Box>
+                        </Container>
                     </Menu>
 
 
