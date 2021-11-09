@@ -17,7 +17,10 @@ const useStyles = makeStyles(() => ({
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-    }
+    },
+    gridItem: {
+        textAlign: 'center',
+    },
 }));
 
 const Home = () => {
@@ -25,13 +28,13 @@ const Home = () => {
 
     return (
         <Box className={classes.root}>
-            <Container maxWidth="lg" style={{ backgroundColor: '' }}>
+            <Container maxWidth="xl" style={{ backgroundColor: '' }}>
                 <Grid container className={classes.gridContainer}>
                     <Grid item xs={6} className={classes.gridItem}>
                         <WorkAnimation height='100%' width='100%' />
                     </Grid>
                     <Grid item xs={6} className={classes.gridItem}>
-                        <Typography variant='h4'>Hello I am Brian Mwendwa</Typography>
+                        <Typography variant='h2' gutterBottom>Hello I am Brian Mwendwa</Typography>
                         <Typography variant='h4'>I design and build software solutions that meet your strategic needs</Typography>
                     </Grid>
                 </Grid>

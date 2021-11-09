@@ -9,6 +9,7 @@ const useStyles = makeStyles(theme => ({
     mainmenu: {
         width: "50vw",
         height: "50vh",
+        background: theme.palette.background.default,
     }
 }));
 
