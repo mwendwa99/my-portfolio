@@ -12,7 +12,7 @@ const useStyles = makeStyles(() => ({
         justifyContent: 'center',
         alignItems: 'center',
     },
-    gridItem: {
+    gridContainer: {
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -26,7 +26,7 @@ const Home = () => {
     return (
         <Box className={classes.root}>
             <Container maxWidth="lg" style={{ backgroundColor: '' }}>
-                <Grid container style={{ backgroundColor: '' }}>
+                <Grid container className={classes.gridContainer}>
                     <Grid item xs={6} className={classes.gridItem}>
                         <WorkAnimation height='100%' width='100%' />
                     </Grid>
