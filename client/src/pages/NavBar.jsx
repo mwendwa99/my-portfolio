@@ -9,7 +9,7 @@ export default function NavBar() {
 
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="static">
+            <AppBar position="fixed" >
                 <Toolbar>
                     <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
                         mwendwa

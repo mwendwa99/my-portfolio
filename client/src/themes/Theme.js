@@ -15,20 +15,19 @@ const light = createTheme({
     },
     palette: {
         background: {
-            default: '#88bdbc',
-        },
-        dark: {
-            main: '#112d32',
+            default: '#003638',
         },
         primary: {
-            main: '#88bdbc',
-            light: '#254e58',
-            contrastText: '#fff'
+            main: '#055052',
+            light: '#53B8BB',
+            dark: '#003638',
+            contrastText: '#F3F2C9'
         },
         secondary: {
-            main: '#4f4a41',
-            light: '#6e6658',
-            contrastText: '#fff'
+            main: '#38A3A5',
+            light: '#57CC99',
+            dark: '#22577A',
+            contrastText: '#80ED99'
         },
         mode: 'light',
     },
