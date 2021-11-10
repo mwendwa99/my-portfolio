@@ -8,16 +8,21 @@ import work from '../assets/animations/working-man.json';
 import scroll from '../assets/animations/scroll-down-animation.json';
 import upwards from '../assets/animations/upwards.json';
 import Pdf from '../document/Resume-Brian-Mwendwa.pdf';
+import Work from './Work';
 
 const useStyles = makeStyles((theme) => ({
     root: {
         height: '100vh',
-        marginTop: '3rem',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
         color: '#F3F2C9',
+    },
+    container: {
+        [theme.breakpoints.down('sm')]: {
+            marginTop: '50%',
+        },
     },
     gridContainer: {
         display: 'flex',
@@ -42,7 +47,7 @@ const Home = () => {
 
     return (
         <Box className={classes.root}>
-            <Container maxWidth="xl">
+            <Container maxWidth="lg" className={classes.container}>
                 <Grid container className={classes.gridContainer}>
                     <Grid item sm={6} xs={12} className={classes.gridItem}>
                         <LottieAnimation lotti={work} height='100%' width='100%' />
@@ -72,6 +77,9 @@ const Home = () => {
                             : <LottieAnimation lotti={upwards} height={100} width={100} />
                     }
                 </Grid>
+            </Container>
+            <Container maxWidth='lg'>
+                <Work />
             </Container>
         </Box >
     )
