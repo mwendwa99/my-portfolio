@@ -18,12 +18,16 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'center',
         alignItems: 'center',
         color: '#F3F2C9',
+        marginTop: '15%',
+        [theme.breakpoints.down('sm')]: {
+            marginTop: '170%',
+        },
     },
     container: {
-        marginTop: '30%',
-        [theme.breakpoints.down('sm')]: {
-            marginTop: '50%',
-        },
+        // marginTop: '30%',
+        // [theme.breakpoints.down('sm')]: {
+        //     marginTop: '50%',
+        // },
     },
     gridContainer: {
         display: 'flex',
