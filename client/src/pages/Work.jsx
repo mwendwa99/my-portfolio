@@ -31,7 +31,7 @@ const Work = () => {
                 </Typography>
                 <Grid container>
                     <Grid item xs={12} sm={4} md={4} className={classes.gridItem}>
-                        <Box p={2} m={1}>
+                        <Box p={2}>
                             <Typography variant="h6" align='center' gutterBottom>
                                 <strong>Design</strong>
                             </Typography>
@@ -42,7 +42,7 @@ const Work = () => {
                         </Box>
                     </Grid>
                     <Grid item xs={12} sm={4} md={4}>
-                        <Box p={2} m={1}>
+                        <Box p={2}>
                             <Typography variant="h6" align='center' gutterBottom>
                                 <strong>Build</strong>
                             </Typography>
@@ -53,7 +53,7 @@ const Work = () => {
                         </Box>
                     </Grid>
                     <Grid item xs={12} sm={4} md={4}>
-                        <Box p={2} m={1}>
+                        <Box p={2}>
                             <Typography variant="h6" align='center' gutterBottom>
                                 <strong>Deploy</strong>
                             </Typography>
