@@ -20,6 +20,7 @@ const useStyles = makeStyles((theme) => ({
         color: '#F3F2C9',
     },
     container: {
+        marginTop: '30%',
         [theme.breakpoints.down('sm')]: {
             marginTop: '50%',
         },
@@ -80,6 +81,7 @@ const Home = () => {
             </Container>
             <Container maxWidth='lg'>
                 <Work />
+
             </Container>
         </Box >
     )
