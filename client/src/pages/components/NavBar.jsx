@@ -1,14 +1,13 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import { Brightness4, Brightness5, MenuRounded } from '@mui/icons-material';
 import { AppBar, Box, IconButton, Toolbar, Typography, MenuItem, Menu, Container } from '@mui/material';
 import { makeStyles } from '@mui/styles';
+import { animated, useSpring } from 'react-spring';
 
 import { useTheme } from '../../context/themeContext';
 
 const useStyles = makeStyles(theme => ({
     mainmenu: {
-        width: "50vw",
-        height: "50vh",
         background: theme.palette.background.default,
     }
 }));
@@ -16,9 +15,21 @@ const useStyles = makeStyles(theme => ({
 const NavBar = () => {
     const { changeTheme, theme } = useTheme();
     const classes = useStyles();
+    const [flip, set] = useState(false);
 
-    const [anchorEl, setAnchorEl] = React.useState(null);
+    const [anchorEl, setAnchorEl] = useState(null);
     const open = Boolean(anchorEl);
+
+    const props = useSpring({
+        to: { opacity: 1 },
+        from: { opacity: 0 },
+        config: { duration: 3000 },
+        reset: true,
+        reverse: flip,
+        delay: 100,
+        onRest: () => set(!flip),
+    });
+
     const handleClick = (event) => {
         setAnchorEl(event.currentTarget);
     };
@@ -40,9 +51,11 @@ const NavBar = () => {
                         aria-label="menu"
                         sx={{ mr: 2 }}
                         onClick={() => changeTheme()}>
-                        {
-                            theme === 'light' ? <Brightness5 /> : <Brightness4 />
-                        }
+                        <animated.div style={props}>
+                            {
+                                theme === 'light' ? <Brightness5 /> : <Brightness4 />
+                            }
+                        </animated.div>
                     </IconButton>
                     <IconButton
                         size="large"
@@ -68,9 +81,9 @@ const NavBar = () => {
                         onClose={handleClose}
                     >
                         <Container className={classes.mainmenu}>
-                            <MenuItem onClick={handleClose}>Profile</MenuItem>
-                            <MenuItem onClick={handleClose}>My account</MenuItem>
-                            <MenuItem onClick={handleClose}>Logout</MenuItem>
+                            <MenuItem onClick={handleClose}>Home</MenuItem>
+                            <MenuItem onClick={handleClose}>Work</MenuItem>
+                            <MenuItem onClick={handleClose}>About</MenuItem>
                         </Container>
                     </Menu>
 

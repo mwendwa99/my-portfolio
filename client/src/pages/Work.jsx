@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Grid, Container, Typography } from '@mui/material';
+import { Box, Grid, Typography } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 
 import LottieAnimation from '../assets/animations/LottieAnimation';

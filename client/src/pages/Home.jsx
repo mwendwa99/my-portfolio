@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Box, Container, Grid, Typography, useMediaQuery, Divider, Fab } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import { AttachFile } from '@mui/icons-material';
+import { animated, useSpring } from 'react-spring';
 
 import LottieAnimation from '../assets/animations/LottieAnimation';
 import work from '../assets/animations/working-man.json';
@@ -49,13 +50,21 @@ const useStyles = makeStyles((theme) => ({
 const Home = () => {
     const classes = useStyles();
     const isMobile = useMediaQuery('(min-width: 900px)');
+    // spring props
+    const props = useSpring({
+        to: { opacity: 1 },
+        from: { opacity: 0 },
+        config: { duration: 1000 },
+    });
 
     return (
         <Box className={classes.root}>
             <Container maxWidth="lg" className={classes.container}>
                 <Grid container className={classes.gridContainer}>
                     <Grid item sm={6} xs={12} className={classes.gridItem}>
-                        <LottieAnimation lotti={work} height='100%' width='100%' />
+                        <animated.div style={props}>
+                            <LottieAnimation lotti={work} height='100%' width='100%' />
+                        </animated.div>
                     </Grid>
                     <Grid item sm={6} xs={12} className={classes.gridItem}>
                         <Typography variant='h4' gutterBottom>
@@ -82,10 +91,12 @@ const Home = () => {
                             : <LottieAnimation lotti={upwards} height={100} width={100} />
                     }
                 </Grid>
+
             </Container>
             <Container maxWidth='lg'>
-                <Work />
-
+                <animated.div style={props}>
+                    <Work />
+                </animated.div>
             </Container>
         </Box >
     )
