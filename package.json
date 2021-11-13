@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "react-spring": "^9.3.0",
-    "react-visibility-sensor": "^5.1.1"
-  }
-}
