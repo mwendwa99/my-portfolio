@@ -29,8 +29,8 @@ export default function ControlledAccordions() {
                     aria-controls="panel1bh-content"
                     id="panel1bh-header"
                 >
-                    <Typography variant="h6" align='left' gutterBottom sx={{ width: '40%', flexShrink: 0 }}>
-                        <Typography variant="h5" align='left' gutterBottom>
+                    <Typography variant="h6" align='left' sx={{ width: '40%', flexShrink: 0 }}>
+                        <Typography variant="h5" align='left'>
                             <strong>Junior Web Developer</strong>
                         </Typography>
                     </Typography>
@@ -38,12 +38,19 @@ export default function ControlledAccordions() {
                         <a href="https://conceptshub.co.ke" target="_blank" rel="noopener noreferrer" className={classes.links}>
                             ConceptsHub Kenya &middot; Internship
                         </a>
+                        <br />
+                        <small>Jan 2021 - Mar 2021 3 mos</small>
+                        <br />
+                        <small>Nairobi, Kenya</small>
                     </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography>
-                        Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.
-                        Aliquam eget maximus est, id dignissim quam.
+                    <Typography variant="body1" align='left'>
+                        <ul>
+                            <li>Assisted the web development team with all aspects of website and application design.</li>
+                            <li>Built email templates with MJML</li>
+                            <li>Brainstormed new tech applications such as digital storage and mobile technulogy.</li>
+                        </ul>
                     </Typography>
                 </AccordionDetails>
             </Accordion>
@@ -53,9 +60,19 @@ export default function ControlledAccordions() {
                     aria-controls="panel2bh-content"
                     id="panel2bh-header"
                 >
-                    <Typography sx={{ width: '33%', flexShrink: 0 }}>Users</Typography>
-                    <Typography sx={{ color: 'text.secondary' }}>
-                        You are currently not an owner
+                    <Typography variant="h6" align='left' sx={{ width: '40%', flexShrink: 0 }}>
+                        <Typography variant="h5" align='left'>
+                            <strong>Junior Web Developer</strong>
+                        </Typography>
+                    </Typography>
+                    <Typography variant="h6" align='left' sx={{ color: 'text.secondary' }}>
+                        <a href="https://conceptshub.co.ke" target="_blank" rel="noopener noreferrer" className={classes.links}>
+                            PemterGroup &middot; Freelance
+                        </a>
+                        <br />
+                        <small>Jan 2021 - Jul 2021 7 mos</small>
+                        <small>Nairobi, Kenya</small>
+                        <br />
                     </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
