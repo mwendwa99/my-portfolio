@@ -7,6 +7,15 @@ const dark = createTheme({
             textTransform: 'none'
         },
     },
+    components: {
+        MuiAccordion: {
+            styleOverrides: {
+                root: {
+                    backgroundColor: '#16213E',
+                },
+            },
+        },
+    },
     palette: {
         background: {
             default: '#1A1A2E',
@@ -28,6 +37,18 @@ const dark = createTheme({
 });
 
 const light = createTheme({
+    components: {
+        MuiAccordion: {
+            styleOverrides: {
+                root: {
+                    backgroundColor: '#055052',
+                    '& small': {
+                        color: '#F3F2C9',
+                    }
+                },
+            },
+        },
+    },
     typography: {
         fontFamily: 'Noto Sans, sans-serif',
         button: {
@@ -35,11 +56,6 @@ const light = createTheme({
         },
         allVariants: {
             color: '#F3F2C9',
-        },
-    },
-    overrides: {
-        Paper: {
-            backgroundColor: '#003638',
         },
     },
     palette: {
