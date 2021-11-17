@@ -37,6 +37,11 @@ const light = createTheme({
             color: '#F3F2C9',
         },
     },
+    overrides: {
+        Paper: {
+            backgroundColor: '#003638',
+        },
+    },
     palette: {
         background: {
             default: '#003638',

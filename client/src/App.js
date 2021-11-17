@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, ThemeProvider, Toolbar } from '@mui/material';
+import { ThemeProvider } from '@mui/material';
 import { CssBaseline } from '@mui/material';
 
 import { dark, light } from './themes/Theme';
