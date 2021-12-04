@@ -20,23 +20,20 @@ const useStyles = makeStyles((theme) =>
             justifyContent: 'center',
             alignContent: 'center',
         },
-        paper: {
+        gridContainer: {
+            // center the grid items
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignContent: 'center',
+        },
+        gridItems: {
+            margin: theme.spacing(2),
             padding: theme.spacing(2),
-            textAlign: 'center',
-            color: theme.palette.text.secondary,
         },
         title: {
             margin: theme.spacing(2),
             padding: theme.spacing(2),
-        },
-        gridItems: {
-            // backgroundColor: 'grey',
-            margin: theme.spacing(2),
-            height: '100%',
-        },
-        card: {
-            height: '20rem',
-            width: '100%',
         },
     }),
 );
@@ -58,10 +55,9 @@ const Projects = () => {
                                     </Typography>
                                 </Divider>
                             </Grid>
-                            <Grid container>
+                            <Grid container className={classes.gridContainer}>
                                 <Grid item xs={12} sm={4} className={classes.gridItems}>
                                     <ActionAreaCard
-                                        className={classes.card}
                                         image={images.vcck}
                                         title='Vulnerable Children Concerns Kenya'
                                         description='A local NGO that works to 
@@ -71,7 +67,6 @@ const Projects = () => {
                                 </Grid>
                                 <Grid item xs={12} sm={4} className={classes.gridItems}>
                                     <ActionAreaCard
-                                        className={classes.card}
                                         image={images.divvy}
                                         title='Divvy Analytics'
                                         description='I built a gui for analysing the data collected by Divvy bike sharing app
@@ -81,7 +76,6 @@ const Projects = () => {
                                 </Grid>
                                 <Grid item xs={12} sm={4} className={classes.gridItems}>
                                     <ActionAreaCard
-                                        className={classes.card}
                                         image={images.shoppy}
                                         title='Shoppy Mobile App'
                                         description='I built an ecommerce mobile application for a fictional business

@@ -22,13 +22,13 @@ const dark = createTheme({
                 },
             },
         },
-        // MuiButton: {
-        //     styleOverrides: {
-        //         root: {
-        //             backgroundColor: '#F3F2C9',
-        //         },
-        //     },
-        // },
+        MuiLink: {
+            styleOverrides: {
+                root: {
+                    color: '#F3F2C9',
+                },
+            },
+        },
     },
     palette: {
         background: {
