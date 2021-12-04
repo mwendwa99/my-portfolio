@@ -5,7 +5,7 @@ import { CssBaseline } from '@mui/material';
 import { dark, light } from './themes/Theme';
 import { useTheme } from './context/themeContext';
 import './App.css';
-import { Home, Work, Projects } from './pages';
+import { Home, About, Projects, Experience } from './pages';
 
 
 
@@ -17,7 +17,8 @@ function App() {
     <ThemeProvider theme={theme === 'light' ? light : dark}>
       <CssBaseline />
       <Home />
-      <Work />
+      <About />
+      <Experience />
       <Projects />
     </ThemeProvider>
   );

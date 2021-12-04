@@ -1,5 +1,5 @@
 import React, { useState, useEffect, Fragment, memo } from 'react';
-import { Box, Grid, Typography, Button, Container, createStyles } from '@mui/material';
+import { Box, Grid, Typography, Button, Divider, Container, createStyles, Fade } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles((theme) =>
@@ -41,34 +41,38 @@ const Projects = () => {
 
     return (
         <Fragment>
-            <Box className={classes.root}>
-                <Container maxWidth="lg" className={classes.container}>
-                    <Grid container className={classes.gridContainer}>
-                        <Grid item xs={12}>
-                            <Typography variant="h4" align='center' gutterBottom className={classes.title}>
-                                <strong>Projects 🧪</strong>
-                            </Typography>
+            <Fade timeout={1000} in={true}>
+                <Box className={classes.root}>
+                    <Container maxWidth="lg" className={classes.container}>
+                        <Grid container className={classes.gridContainer}>
+                            <Grid item xs={12}>
+                                <Divider light>
+                                    <Typography variant="h4" align='center' gutterBottom className={classes.title}>
+                                        <strong>Projects 🧪</strong>
+                                    </Typography>
+                                </Divider>
+                            </Grid>
+                            <Grid container >
+                                <Grid item xs={4} className={classes.gridItems}>
+                                    <Typography variant="h6">
+                                        Coming soon...
+                                    </Typography>
+                                </Grid>
+                                <Grid item xs={4} className={classes.gridItems}>
+                                    <Typography variant="h6">
+                                        Coming soon...
+                                    </Typography>
+                                </Grid>
+                                <Grid item xs={4} className={classes.gridItems}>
+                                    <Typography variant="h6">
+                                        Coming soon...
+                                    </Typography>
+                                </Grid>
+                            </Grid>
                         </Grid>
-                        <Grid container >
-                            <Grid item xs={4} className={classes.gridItems}>
-                                <Typography variant="h6">
-                                    Coming soon...
-                                </Typography>
-                            </Grid>
-                            <Grid item xs={4} className={classes.gridItems}>
-                                <Typography variant="h6">
-                                    Coming soon...
-                                </Typography>
-                            </Grid>
-                            <Grid item xs={4} className={classes.gridItems}>
-                                <Typography variant="h6">
-                                    Coming soon...
-                                </Typography>
-                            </Grid>
-                        </Grid>
-                    </Grid>
-                </Container>
-            </Box>
+                    </Container>
+                </Box>
+            </Fade>
         </Fragment>
     );
 }
