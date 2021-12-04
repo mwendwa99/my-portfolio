@@ -1,6 +1,9 @@
-import React, { useState, useEffect, Fragment, memo } from 'react';
-import { Box, Grid, Typography, Button, Divider, Container, createStyles, Fade } from '@mui/material';
+import React, { Fragment, memo } from 'react';
+import { Box, Grid, Typography, Divider, Container, createStyles, Fade } from '@mui/material';
 import { makeStyles } from '@mui/styles';
+
+import ActionAreaCard from './components/ActionAreaCard';
+import { images } from '../assets';
 
 const useStyles = makeStyles((theme) =>
     createStyles({
@@ -16,7 +19,6 @@ const useStyles = makeStyles((theme) =>
             flexDirection: 'column',
             justifyContent: 'center',
             alignContent: 'center',
-            // backgroundColor: 'grey',
         },
         paper: {
             padding: theme.spacing(2),
@@ -28,10 +30,14 @@ const useStyles = makeStyles((theme) =>
             padding: theme.spacing(2),
         },
         gridItems: {
-            // padding: theme.spacing(2),
-            backgroundColor: 'grey',
+            // backgroundColor: 'grey',
             margin: theme.spacing(2),
-        }
+            height: '100%',
+        },
+        card: {
+            height: '20rem',
+            width: '100%',
+        },
     }),
 );
 
@@ -52,21 +58,36 @@ const Projects = () => {
                                     </Typography>
                                 </Divider>
                             </Grid>
-                            <Grid container >
-                                <Grid item xs={4} className={classes.gridItems}>
-                                    <Typography variant="h6">
-                                        Coming soon...
-                                    </Typography>
+                            <Grid container>
+                                <Grid item xs={12} sm={4} className={classes.gridItems}>
+                                    <ActionAreaCard
+                                        className={classes.card}
+                                        image={images.vcck}
+                                        title='Vulnerable Children Concerns Kenya'
+                                        description='A local NGO that works to 
+                                        achieve sustainable solutions to ending children poverty.'
+                                        link='https://vcck.org/'
+                                    />
                                 </Grid>
-                                <Grid item xs={4} className={classes.gridItems}>
-                                    <Typography variant="h6">
-                                        Coming soon...
-                                    </Typography>
+                                <Grid item xs={12} sm={4} className={classes.gridItems}>
+                                    <ActionAreaCard
+                                        className={classes.card}
+                                        image={images.divvy}
+                                        title='Divvy Analytics'
+                                        description='I built a gui for analysing the data collected by Divvy bike sharing app
+                                        in C++.'
+                                        link='https://github.com/mwendwa99/divvy-analysis'
+                                    />
                                 </Grid>
-                                <Grid item xs={4} className={classes.gridItems}>
-                                    <Typography variant="h6">
-                                        Coming soon...
-                                    </Typography>
+                                <Grid item xs={12} sm={4} className={classes.gridItems}>
+                                    <ActionAreaCard
+                                        className={classes.card}
+                                        image={images.shoppy}
+                                        title='Shoppy Mobile App'
+                                        description='I built an ecommerce mobile application for a fictional business
+                                        in React Native.'
+                                        link='https://github.com/mwendwa99/shoppy-final'
+                                    />
                                 </Grid>
                             </Grid>
                         </Grid>

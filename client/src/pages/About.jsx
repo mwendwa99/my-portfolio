@@ -2,7 +2,7 @@ import React, { Fragment, memo } from 'react';
 import { Box, Container, Divider, Fade, Grid, Typography } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 
-import { images } from '../assets';
+import { illustration } from '../assets';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -21,6 +21,7 @@ const useStyles = makeStyles((theme) => ({
     },
     title: {
         padding: theme.spacing(2),
+        margin: theme.spacing(2),
     },
 }));
 
@@ -44,7 +45,7 @@ const Work = () => {
                                 <Typography variant="h5" align='center' gutterBottom>
                                     <strong>Design</strong>
                                 </Typography>
-                                <img src={images.design} height={300} width="100%" alt="" />
+                                <img src={illustration.design} height={300} width="100%" alt="" />
                                 <Typography variant="h6" align='center' gutterBottom>
                                     I conceptualize an idea into beautiful ui and great user experience.
                                 </Typography>
@@ -53,7 +54,7 @@ const Work = () => {
                                 <Typography variant="h5" align='center' gutterBottom>
                                     <strong>Build</strong>
                                 </Typography>
-                                <img src={images.build} height={300} width="100%" alt="" />
+                                <img src={illustration.build} height={300} width="100%" alt="" />
                                 <Typography variant="h6" align='center' gutterBottom>
                                     I identify, test and build software from the ground up in modern web technologies.
                                 </Typography>
@@ -62,7 +63,7 @@ const Work = () => {
                                 <Typography variant="h5" align='center' gutterBottom>
                                     <strong>Deploy</strong>
                                 </Typography>
-                                <img src={images.deploy} height={300} width="100%" alt="" />
+                                <img src={illustration.deploy} height={300} width="100%" alt="" />
                                 <Typography variant="h6" align='center' gutterBottom>
                                     I monitor cloud maintenance, planning, security and usage across the company.
                                 </Typography>

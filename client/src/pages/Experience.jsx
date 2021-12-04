@@ -24,6 +24,10 @@ const useStyles = makeStyles(theme => ({
         justifyContent: 'center',
         alignContent: 'center',
     },
+    title: {
+        padding: theme.spacing(2),
+        margin: theme.spacing(2),
+    },
 }));
 
 const Experience = memo(() => {
