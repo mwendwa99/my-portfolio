@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { Fragment, memo } from 'react'
 
 const About = () => {
     return (
-        <div>
+        <Fragment>
             ABOUT
-        </div>
+        </Fragment>
     )
 }
 
-export default About
+export default memo(About)

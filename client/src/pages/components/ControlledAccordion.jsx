@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { Fragment, memo } from 'react';
 import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -16,7 +16,7 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
-export default function ControlledAccordions() {
+function ControlledAccordions() {
     const [expanded, setExpanded] = React.useState(false);
     const classes = useStyles();
 
@@ -25,7 +25,7 @@ export default function ControlledAccordions() {
     };
 
     return (
-        <div>
+        <Fragment>
             <Accordion className={classes.root} expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
@@ -40,7 +40,7 @@ export default function ControlledAccordions() {
                             ConceptsHub Kenya &middot; Internship
                         </a>
                         <br />
-                        <small>Jan 2021 - Mar 2021 3 mos</small>
+                        <small>Jan 2021 - Mar 2021 <br />3 mos</small>
                         <br />
                         <small>Nairobi, Kenya</small>
                     </Typography>
@@ -70,7 +70,7 @@ export default function ControlledAccordions() {
                             PemterGroup &middot; Freelance
                         </a>
                         <br />
-                        <small>Jan 2021 - Jul 2021 7 mos</small>
+                        <small>Jan 2021 - Jul 2021 <br />7 mos</small>
                         <br />
                         <small>Nairobi, Kenya</small>
                         <br />
@@ -103,7 +103,7 @@ export default function ControlledAccordions() {
                             Vulnerable Children Concern Kenya &middot; Freelance
                         </a>
                         <br />
-                        <small>Oct 2020 - Nov 2021 1 year</small>
+                        <small>Oct 2020 - Nov 2021 <br />1 year</small>
                         <br />
                         <small>Nairobi, Kenya</small>
                     </Typography>
@@ -119,6 +119,8 @@ export default function ControlledAccordions() {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-        </div>
+        </Fragment>
     );
 }
+
+export default memo(ControlledAccordions);

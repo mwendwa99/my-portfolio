@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { memo, Fragment } from 'react'
 
 const Contact = () => {
     return (
-        <div>
+        <Fragment>
             CONTACT
-        </div>
+        </Fragment>
     )
 }
 
-export default Contact
+export default memo(Contact)
