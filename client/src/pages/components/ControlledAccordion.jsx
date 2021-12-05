@@ -66,7 +66,7 @@ function ControlledAccordions() {
                         <strong>Web Developer</strong>
                     </Typography>
                     <Typography variant="h6" align='left' sx={{ color: 'text.secondary' }}>
-                        <a href="https://conceptshub.co.ke" target="_blank" rel="noopener noreferrer" className={classes.links}>
+                        <a href="https://pemtergroup.com/" target="_blank" rel="noopener noreferrer" className={classes.links}>
                             PemterGroup &middot; Freelance
                         </a>
                         <br />

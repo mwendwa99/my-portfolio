@@ -35,7 +35,7 @@ const Work = () => {
                     <Container maxWidth="lg" className={classes.container}>
                         <Grid container>
                             <Grid item md={12} sm={12} xs={12}>
-                                <Divider light={true}>
+                                <Divider light={true} component={'div'}>
                                     <Typography variant="h4" align='center' gutterBottom className={classes.title}>
                                         <strong>What I do 💻</strong>
                                     </Typography>

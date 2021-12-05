@@ -1,5 +1,5 @@
 import React, { memo } from 'react';
-import { Box, Typography, Grid, Divider, Container, Button, Link } from "@mui/material"
+import { Box, Typography, Grid, Divider, Container, Link } from "@mui/material"
 import { makeStyles } from '@mui/styles';
 import { Stack } from '@mui/material';
 import { GitHub, LinkedIn, Mail, Twitter } from '@mui/icons-material';

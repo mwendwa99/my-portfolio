@@ -52,6 +52,20 @@ const dark = createTheme({
 
 const light = createTheme({
     components: {
+        MuiButton: {
+            styleOverrides: {
+                root: {
+                    backgroundColor: '#003638',
+                },
+            },
+        },
+        MuiCardContent: {
+            styleOverrides: {
+                root: {
+                    color: '#F3F2C9',
+                },
+            },
+        },
         MuiAccordion: {
             styleOverrides: {
                 root: {
@@ -59,6 +73,32 @@ const light = createTheme({
                     '& small': {
                         color: '#F3F2C9',
                     }
+                },
+            },
+        },
+        MuiDivider: {
+            styleOverrides: {
+                root: {
+                    " &:before": {
+                        borderTop: '1px solid #F3F2C9',
+                    },
+                    " &:after": {
+                        borderTop: '1px solid #F3F2C9',
+                    },
+                },
+            },
+        },
+        MuiCard: {
+            styleOverrides: {
+                root: {
+                    backgroundColor: '#055052',
+                },
+            },
+        },
+        MuiLink: {
+            styleOverrides: {
+                root: {
+                    color: '#53B8BB',
                 },
             },
         },
@@ -87,6 +127,10 @@ const light = createTheme({
             light: '#57CC99',
             dark: '#22577A',
             contrastText: '#F3F2C9'
+        },
+        text: {
+            primary: '#F3F2C9',
+            secondary: '#F3F2C9',
         },
         mode: 'light',
     },
