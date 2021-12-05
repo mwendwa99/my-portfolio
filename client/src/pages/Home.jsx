@@ -2,8 +2,6 @@ import React, { useState, memo } from 'react';
 import { Box, Container, Grid, Typography, useMediaQuery, Divider, Fab, Fade, AppBar, IconButton, Menu, MenuItem, Toolbar } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import { AttachFile, Brightness4, Brightness5, MenuRounded } from '@mui/icons-material';
-// import { Link } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
 
 import LottieAnimation from '../assets/animations/LottieAnimation';
 import work from '../assets/animations/working-man.json';
@@ -32,7 +30,6 @@ const useStyles = makeStyles((theme) => ({
 const Home = () => {
     const { changeTheme, theme } = useTheme();
     const classes = useStyles();
-    const navigate = useNavigate();
 
     const isMobile = useMediaQuery('(min-width: 900px)');
     const [anchorEl, setAnchorEl] = useState(null);
@@ -47,7 +44,6 @@ const Home = () => {
     const handleRoute = (e) => {
         const route = e.target.id
         setAnchorEl(null);
-        navigate(route);
     };
 
     return (
