@@ -2,6 +2,8 @@ import React, { useState, memo } from 'react';
 import { Box, Container, Grid, Typography, useMediaQuery, Divider, Fab, Fade, AppBar, IconButton, Menu, MenuItem, Toolbar } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import { AttachFile, Brightness4, Brightness5, MenuRounded } from '@mui/icons-material';
+// import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 import LottieAnimation from '../assets/animations/LottieAnimation';
 import work from '../assets/animations/working-man.json';
@@ -30,6 +32,7 @@ const useStyles = makeStyles((theme) => ({
 const Home = () => {
     const { changeTheme, theme } = useTheme();
     const classes = useStyles();
+    const navigate = useNavigate();
 
     const isMobile = useMediaQuery('(min-width: 900px)');
     const [anchorEl, setAnchorEl] = useState(null);
@@ -41,7 +44,11 @@ const Home = () => {
     const handleClose = () => {
         setAnchorEl(null);
     };
-
+    const handleRoute = (e) => {
+        const route = e.target.id
+        setAnchorEl(null);
+        navigate(route);
+    };
 
     return (
         <React.Fragment>
@@ -86,11 +93,12 @@ const Home = () => {
                                 open={open}
                                 onClose={handleClose}
                             >
-                                <Container className={classes.mainmenu}>
-                                    <MenuItem onClick={handleClose}>Home</MenuItem>
-                                    <MenuItem onClick={handleClose}>Work</MenuItem>
-                                    <MenuItem onClick={handleClose}>About</MenuItem>
-                                </Container>
+                                {/* <Container className={classes.mainmenu}> */}
+                                <MenuItem divider id='/' onClick={(e) => handleRoute(e)}>Home</MenuItem>
+                                <MenuItem divider id='about' onClick={(e) => handleRoute(e)}>About</MenuItem>
+                                <MenuItem divider id='experience' onClick={(e) => handleRoute(e)}>Experience</MenuItem>
+                                <MenuItem id='footer' onClick={(e) => handleRoute(e)}>socials</MenuItem>
+                                {/* </Container> */}
                             </Menu>
                         </Toolbar>
                     </AppBar>

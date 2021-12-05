@@ -102,6 +102,28 @@ const light = createTheme({
                 },
             },
         },
+        MuiMenuItem: {
+            styleOverrides: {
+                root: {
+                    backgroundColor: '#003638',
+                },
+            },
+        },
+        MuiMenu: {
+            styleOverrides: {
+                paper: {
+                    backgroundColor: '#003638',
+                },
+            },
+        },
+        MuiPaper: {
+            styleOverrides: {
+                root: {
+                    backgroundColor: '#003638',
+                    padding: '0px',
+                },
+            },
+        },
     },
     typography: {
         fontFamily: 'Noto Sans, sans-serif',
@@ -130,7 +152,7 @@ const light = createTheme({
         },
         text: {
             primary: '#F3F2C9',
-            secondary: '#F3F2C9',
+            secondary: '#57CC99',
         },
         mode: 'light',
     },
