@@ -60,7 +60,7 @@ const Home = () => {
                     <AppBar className={classes.appbar} enableColorOnDark elevation={0} >
                         <Toolbar variant='dense'>
                             <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
-                                <strong>mwendwa</strong>
+                                mwendwa
                             </Typography>
                             <IconButton
                                 size="large"
@@ -96,13 +96,11 @@ const Home = () => {
                                 open={open}
                                 onClose={handleClose}
                             >
-                                {/* <Container className={classes.mainmenu}> */}
                                 <MenuItem divider id='home' onClick={(e) => handleRoute(e)}>Home</MenuItem>
                                 <MenuItem divider id='about' onClick={(e) => handleRoute(e)}>About</MenuItem>
                                 <MenuItem divider id='projects' onClick={(e) => handleRoute(e)}>Projects</MenuItem>
                                 <MenuItem divider id='experience' onClick={(e) => handleRoute(e)}>Experience</MenuItem>
                                 <MenuItem id='footer' onClick={(e) => handleRoute(e)}>socials</MenuItem>
-                                {/* </Container> */}
                             </Menu>
                         </Toolbar>
                     </AppBar>
