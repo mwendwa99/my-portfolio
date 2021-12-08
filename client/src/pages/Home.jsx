@@ -11,7 +11,7 @@ import { useTheme } from '../context/themeContext';
 
 const useStyles = makeStyles((theme) => ({
     container: {
-        height: '100vh',
+        height: '100%',
     },
     gridContainer: {
         display: 'flex',
@@ -130,7 +130,8 @@ const Home = () => {
                                     </Typography>
                                 </Fab>
                             </Grid>
-                            <Grid item style={{ position: 'absolute', bottom: '0', }}>
+                            {/* <Grid item style={{ position: 'absolute', bottom: '0', }}> */}
+                            <Grid item >
                                 {
                                     isMobile ? (
                                         <div>

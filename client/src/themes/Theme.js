@@ -29,6 +29,21 @@ const dark = createTheme({
                 },
             },
         },
+        MuiMenuItem: {
+            styleOverrides: {
+                root: {
+                    backgroundColor: '#1A1A2E',
+                },
+            },
+        },
+        MuiPaper: {
+            styleOverrides: {
+                root: {
+                    backgroundColor: '#1A1A2E',
+                    padding: '0px',
+                },
+            },
+        },
     },
     palette: {
         background: {
@@ -105,13 +120,6 @@ const light = createTheme({
         MuiMenuItem: {
             styleOverrides: {
                 root: {
-                    backgroundColor: '#003638',
-                },
-            },
-        },
-        MuiMenu: {
-            styleOverrides: {
-                paper: {
                     backgroundColor: '#003638',
                 },
             },

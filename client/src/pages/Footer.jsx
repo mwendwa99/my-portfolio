@@ -20,6 +20,10 @@ const useStyles = makeStyles(theme => ({
         marginBottom: theme.spacing(2),
         padding: theme.spacing(2),
     },
+    gridContainer: {
+        display: 'flex',
+        justifyContent: 'center',
+    }
 }));
 
 const Footer = () => {
@@ -27,7 +31,7 @@ const Footer = () => {
     return (
         <Box id='footer' className={classes.root}>
             <Container maxWidth="lg">
-                <Grid container>
+                <Grid container style={{}}>
                     <Grid item xs={12}>
                         <Divider light>
                             <Typography variant="h4" align='center' gutterBottom className={classes.title}>
@@ -35,40 +39,42 @@ const Footer = () => {
                             </Typography>
                         </Divider>
                     </Grid>
-                    <Grid item xs={12} sm={12}>
-                        <Stack direction="column" spacing={3} className={classes.stackList}>
-                            <Link underline='hover'
-                                href="https://github.com/mwendwa99"
-                                target="_blank" rel="noopener noreferrer">
-                                <Typography variant="h6" align='center' gutterBottom className={classes.title}>
-                                    <GitHub /> &nbsp; @mwendwa99
-                                </Typography>
-                            </Link>
-                            <Link underline='hover'
-                                href="https://www.linkedin.com/in/brian-mwendwa-25326a173/"
-                                target="_blank" rel="noopener noreferrer">
-                                <Typography variant="h6" align='center' gutterBottom className={classes.title}>
-                                    <LinkedIn /> &nbsp;Brian Mwendwa
-                                </Typography>
-                            </Link>
-                            <Link underline='hover'
-                                href="https://twitter.com/mwendwa_atl"
-                                target="_blank" rel="noopener noreferrer">
-                                <Typography variant="h6" align='center' gutterBottom className={classes.title}>
-                                    <Twitter />&nbsp; @mwendwa_atl
-                                </Typography>
-                            </Link>
-                            <Link underline='hover'
-                                href="mailto:brianmwendwa.mu@gmail.com?subject = Feedback&body = Message"
-                                rel="noopener noreferrer">
-                                <Typography variant="h6" align='center' gutterBottom className={classes.title}>
-                                    <Mail fontSize='small' />&nbsp; Brian mwendwa
-                                </Typography>
-                            </Link>
-                        </Stack>
-                        <Typography variant="h6" align='center' gutterBottom className={classes.title}>
-                            © 2021 Brian Mwendwa. All Rights Reserved.
-                        </Typography>
+                    <Grid container className={classes.gridContainer}>
+                        <Grid item xs={12} sm={5}>
+                            <Stack direction="column" spacing={3} className={classes.stackList}>
+                                <Link underline='hover'
+                                    href="https://github.com/mwendwa99"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <Typography variant="h6" align='center' gutterBottom className={classes.title}>
+                                        <GitHub /> &nbsp; @mwendwa99
+                                    </Typography>
+                                </Link>
+                                <Link underline='hover'
+                                    href="https://www.linkedin.com/in/brian-mwendwa-25326a173/"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <Typography variant="h6" align='center' gutterBottom className={classes.title}>
+                                        <LinkedIn /> &nbsp;Brian Mwendwa
+                                    </Typography>
+                                </Link>
+                                <Link underline='hover'
+                                    href="https://twitter.com/mwendwa_atl"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <Typography variant="h6" align='center' gutterBottom className={classes.title}>
+                                        <Twitter />&nbsp; @mwendwa_atl
+                                    </Typography>
+                                </Link>
+                                <Link underline='hover'
+                                    href="mailto:brianmwendwa.mu@gmail.com?subject = Feedback&body = Message"
+                                    rel="noopener noreferrer">
+                                    <Typography variant="h6" align='center' gutterBottom className={classes.title}>
+                                        <Mail fontSize='small' />&nbsp; Brian mwendwa
+                                    </Typography>
+                                </Link>
+                            </Stack>
+                            <Typography variant="h6" align='center' gutterBottom className={classes.title}>
+                                © 2021 Brian Mwendwa. All Rights Reserved.
+                            </Typography>
+                        </Grid>
                     </Grid>
                 </Grid>
             </Container>
