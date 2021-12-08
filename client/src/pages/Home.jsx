@@ -42,14 +42,21 @@ const Home = () => {
         setAnchorEl(null);
     };
     const handleRoute = (e) => {
-        const route = e.target.id
+        // const route = e.target.id
+        // window scroll to id
+        const element = document.getElementById(e.target.id);
+        // element.scrollIntoView({ behavior: 'smooth', block: 'start' });.
+        window.scrollTo({
+            top: element.offsetTop - 100,
+            behavior: "smooth"
+        });
         setAnchorEl(null);
     };
 
     return (
         <React.Fragment>
             <Fade in timeout={1000}>
-                <Box>
+                <Box id='home'>
                     <AppBar className={classes.appbar} enableColorOnDark elevation={0} >
                         <Toolbar variant='dense'>
                             <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
@@ -90,8 +97,9 @@ const Home = () => {
                                 onClose={handleClose}
                             >
                                 {/* <Container className={classes.mainmenu}> */}
-                                <MenuItem divider id='/' onClick={(e) => handleRoute(e)}>Home</MenuItem>
+                                <MenuItem divider id='home' onClick={(e) => handleRoute(e)}>Home</MenuItem>
                                 <MenuItem divider id='about' onClick={(e) => handleRoute(e)}>About</MenuItem>
+                                <MenuItem divider id='projects' onClick={(e) => handleRoute(e)}>Projects</MenuItem>
                                 <MenuItem divider id='experience' onClick={(e) => handleRoute(e)}>Experience</MenuItem>
                                 <MenuItem id='footer' onClick={(e) => handleRoute(e)}>socials</MenuItem>
                                 {/* </Container> */}

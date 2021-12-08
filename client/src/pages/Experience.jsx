@@ -35,7 +35,7 @@ const Experience = memo(() => {
     return (
         <Fragment>
             <Fade in={true} timeout={1000}>
-                <Box className={classes.root}>
+                <Box id='experience' className={classes.root}>
                     <Container maxWidth="lg" className={classes.container}>
                         <Grid container>
                             <Grid item xs={12} sm={12} md={12}>

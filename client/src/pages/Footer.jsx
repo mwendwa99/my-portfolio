@@ -25,7 +25,7 @@ const useStyles = makeStyles(theme => ({
 const Footer = () => {
     const classes = useStyles();
     return (
-        <Box className={classes.root}>
+        <Box id='footer' className={classes.root}>
             <Container maxWidth="lg">
                 <Grid container>
                     <Grid item xs={12}>

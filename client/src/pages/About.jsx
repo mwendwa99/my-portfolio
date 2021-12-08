@@ -31,7 +31,7 @@ const Work = () => {
     return (
         <Fragment>
             <Fade in timeout={1000}>
-                <Box className={classes.root}>
+                <Box id='about' className={classes.root}>
                     <Container maxWidth="lg" className={classes.container}>
                         <Grid container>
                             <Grid item md={12} sm={12} xs={12}>

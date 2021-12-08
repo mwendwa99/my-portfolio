@@ -45,7 +45,7 @@ const Projects = () => {
     return (
         <Fragment>
             <Fade timeout={1000} in={true}>
-                <Box className={classes.root}>
+                <Box id='projects' className={classes.root}>
                     <Container maxWidth="lg" className={classes.container}>
                         <Grid container className={classes.gridContainer}>
                             <Grid item xs={12}>

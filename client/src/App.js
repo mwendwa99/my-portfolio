@@ -1,6 +1,5 @@
 import React from 'react';
 import { ThemeProvider, CssBaseline } from '@mui/material';
-// import {motion, useViewportScroll } from 'framer-motion';
 
 import { dark, light } from './themes/Theme';
 import { useTheme } from './context/themeContext';
