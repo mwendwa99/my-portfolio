@@ -130,7 +130,6 @@ const Home = () => {
                                     </Typography>
                                 </Fab>
                             </Grid>
-                            {/* <Grid item style={{ position: 'absolute', bottom: '0', }}> */}
                             <Grid item >
                                 {
                                     isMobile ? (
