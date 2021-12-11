@@ -130,7 +130,7 @@ const Home = () => {
                                     </Typography>
                                 </Fab>
                             </Grid>
-                            <Grid item >
+                            <Grid item style={{ width: '5%', height: '5%' }}>
                                 {
                                     isMobile ? (
                                         <div>

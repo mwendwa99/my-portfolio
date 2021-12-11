@@ -41,7 +41,11 @@ const Footer = () => {
                     </Grid>
                     <Grid container className={classes.gridContainer}>
                         <Grid item xs={12} sm={5}>
-                            <Stack direction="column" spacing={3} className={classes.stackList}>
+                            <Stack direction="column" spacing={3} className={classes.stackList}
+                                style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+                                <Link href="https://wakatime.com/@2aba1a8d-1c0f-4cb2-8d62-adf66b362996">
+                                    <img src="https://wakatime.com/badge/user/2aba1a8d-1c0f-4cb2-8d62-adf66b362996.svg" alt="Total time coded since Oct 23 2021" />
+                                </Link>
                                 <Link underline='hover'
                                     href="https://github.com/mwendwa99"
                                     target="_blank" rel="noopener noreferrer">
