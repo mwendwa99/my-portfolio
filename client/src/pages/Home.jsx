@@ -122,10 +122,10 @@ const Home = () => {
                                 <br />
                                 <Divider variant='middle' flexItem light style={{ backgroundColor: '#F3F2C9' }} />
                                 <br />
-                                <Fab variant='extended' color='secondary' size='large'
+                                <Fab variant='extended' color='primary' size='small'
                                     onClick={() => window.open(Pdf, '_blank')} className={classes.fab}>
-                                    <AttachFile fontSize='medium' sx={{ mr: 1 }} />
-                                    <Typography variant='h6'>
+                                    <AttachFile fontSize='small' sx={{ mr: 1 }} />
+                                    <Typography variant='body1'>
                                         View My Resume
                                     </Typography>
                                 </Fab>
