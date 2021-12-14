@@ -58,7 +58,7 @@ const Home = () => {
             <Fade in timeout={1000}>
                 <Box id='home'>
                     <AppBar className={classes.appbar} enableColorOnDark elevation={0} >
-                        <Toolbar variant='dense'>
+                        <Toolbar variant='regular'>
                             <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
                                 mwendwa
                             </Typography>
@@ -105,16 +105,16 @@ const Home = () => {
                         </Toolbar>
                     </AppBar>
                     <Toolbar />
-                    <Container maxWidth="lg" className={classes.container}>
+                    <Container maxWidth="md" className={classes.container}>
                         <Grid container className={classes.gridContainer}>
                             <Grid item sm={6} xs={12} className={classes.gridItem}>
                                 <LottieAnimation lotti={work} height='100%' width='100%' />
                             </Grid>
                             <Grid item sm={6} xs={12} className={classes.gridItem}>
-                                <Typography variant='h4' gutterBottom>
+                                <Typography variant='h5' gutterBottom>
                                     <strong>Hello I am Brian Mwendwa</strong>
                                 </Typography>
-                                <Typography variant='h6' gutterBottom>
+                                <Typography variant='body1' gutterBottom>
                                     I design and build software solutions that meet your strategic needs.
                                     I am skilled in web and mobile development with over 2 years of experience
                                     developing products for a diverse range of clients.

@@ -46,11 +46,11 @@ const Projects = () => {
         <Fragment>
             <Fade timeout={1000} in={true}>
                 <Box id='projects' className={classes.root}>
-                    <Container maxWidth="lg" className={classes.container}>
+                    <Container maxWidth="md" className={classes.container}>
                         <Grid container className={classes.gridContainer}>
                             <Grid item xs={12}>
                                 <Divider light>
-                                    <Typography variant="h4" align='center' gutterBottom className={classes.title}>
+                                    <Typography variant="h5" align='center' gutterBottom className={classes.title}>
                                         <strong>Projects 🧪</strong>
                                     </Typography>
                                 </Divider>

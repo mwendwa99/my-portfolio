@@ -26,7 +26,7 @@ const ActionAreaCard = memo(({ image, title, description, link }) => {
                 alt="green iguana"
             />
             <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography gutterBottom variant="h6" component="div">
                     {title}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">

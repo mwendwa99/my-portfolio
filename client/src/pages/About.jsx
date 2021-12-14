@@ -32,39 +32,39 @@ const Work = () => {
         <Fragment>
             <Fade in timeout={1000}>
                 <Box id='about' className={classes.root}>
-                    <Container maxWidth="lg" className={classes.container}>
+                    <Container maxWidth="md" className={classes.container}>
                         <Grid container>
                             <Grid item md={12} sm={12} xs={12}>
                                 <Divider light={true} component={'div'}>
-                                    <Typography variant="h4" align='center' gutterBottom className={classes.title}>
+                                    <Typography variant="h5" align='center' gutterBottom className={classes.title}>
                                         <strong>What I do 💻</strong>
                                     </Typography>
                                 </Divider>
                             </Grid>
                             <Grid item xs={12} sm={4} md={4} >
                                 <Typography variant="h5" align='center' gutterBottom>
-                                    <strong>Design</strong>
+                                    Design
                                 </Typography>
                                 <img src={illustration.design} height={300} width="100%" alt="" />
-                                <Typography variant="h6" align='center' gutterBottom>
+                                <Typography variant="body1" align='center' gutterBottom>
                                     I conceptualize an idea into beautiful ui and great user experience.
                                 </Typography>
                             </Grid>
                             <Grid item xs={12} sm={4} md={4}>
                                 <Typography variant="h5" align='center' gutterBottom>
-                                    <strong>Build</strong>
+                                    Build
                                 </Typography>
                                 <img src={illustration.build} height={300} width="100%" alt="" />
-                                <Typography variant="h6" align='center' gutterBottom>
+                                <Typography variant="body1" align='center' gutterBottom>
                                     I identify, test and build software from the ground up in modern web technologies.
                                 </Typography>
                             </Grid>
                             <Grid item xs={12} sm={4} md={4}>
                                 <Typography variant="h5" align='center' gutterBottom>
-                                    <strong>Deploy</strong>
+                                    Deploy
                                 </Typography>
                                 <img src={illustration.deploy} height={300} width="100%" alt="" />
-                                <Typography variant="h6" align='center' gutterBottom>
+                                <Typography variant="body1" align='center' gutterBottom>
                                     I monitor cloud maintenance, planning, security and usage across the company.
                                 </Typography>
                             </Grid>

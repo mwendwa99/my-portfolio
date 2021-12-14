@@ -32,10 +32,10 @@ function ControlledAccordions() {
                     aria-controls="panel1bh-content"
                     id="panel1bh-header"
                 >
-                    <Typography variant="h6" align='left' sx={{ width: '40%', flexShrink: 0 }}>
-                        <strong>Web Developer</strong>
+                    <Typography variant="body1" align='left' sx={{ width: '40%', mr: 2, flexShrink: 0 }}>
+                        Web Developer
                     </Typography>
-                    <Typography variant='h6' sx={{ color: 'text.secondary' }}>
+                    <Typography variant='body1' sx={{ color: 'text.secondary' }}>
                         <a href="https://conceptshub.co.ke" target="_blank" rel="noopener noreferrer" className={classes.links}>
                             ConceptsHub Kenya &middot; Internship
                         </a>
@@ -64,10 +64,10 @@ function ControlledAccordions() {
                     aria-controls="panel2bh-content"
                     id="panel2bh-header"
                 >
-                    <Typography variant="h6" align='left' sx={{ width: '40%', flexShrink: 0 }}>
-                        <strong>Web Developer</strong>
+                    <Typography variant="body1" align='left' sx={{ width: '40%', mr: 2, flexShrink: 0 }}>
+                        Web Developer
                     </Typography>
-                    <Typography variant="h6" align='left' sx={{ color: 'text.secondary' }}>
+                    <Typography variant="body1" align='left' sx={{ color: 'text.secondary' }}>
                         <a href="https://pemtergroup.com/" target="_blank" rel="noopener noreferrer" className={classes.links}>
                             PemterGroup &middot; Freelance
                         </a>
@@ -101,10 +101,10 @@ function ControlledAccordions() {
                     aria-controls="panel3bh-content"
                     id="panel3bh-header"
                 >
-                    <Typography variant="h6" align='left' sx={{ width: '40%', flexShrink: 0 }}>
-                        <strong>Software Developer</strong>
+                    <Typography variant="body1" align='left' sx={{ width: '40%', mr: 2, flexShrink: 0 }}>
+                        Software Developer
                     </Typography>
-                    <Typography variant="h6" align='left' sx={{ color: 'text.secondary' }}>
+                    <Typography variant="body1" align='left' sx={{ color: 'text.secondary' }}>
                         <a href="https://vcck.org" target="_blank" rel="noopener noreferrer" className={classes.links}>
                             Vulnerable Children Concern Kenya &middot; Freelance
                         </a>

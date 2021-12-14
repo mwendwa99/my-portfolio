@@ -36,11 +36,11 @@ const Experience = memo(() => {
         <Fragment>
             <Fade in={true} timeout={1000}>
                 <Box id='experience' className={classes.root}>
-                    <Container maxWidth="lg" className={classes.container}>
+                    <Container maxWidth="md" className={classes.container}>
                         <Grid container>
                             <Grid item xs={12} sm={12} md={12}>
                                 <Divider light={true}>
-                                    <Typography variant="h4" align='center' gutterBottom className={classes.title}>
+                                    <Typography variant="h5" align='center' gutterBottom className={classes.title}>
                                         <strong>Experience 💼</strong>
                                     </Typography>
                                 </Divider>
